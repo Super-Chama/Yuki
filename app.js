@@ -14,12 +14,7 @@ const DECREES = [
   { emoji: '😌', activity: 'receiving adoration', detail: 'you may pet her now. for exactly 2.5 seconds. then stop.',            photo: 3 },
 ];
 
-const ORACLE_CATS = [
-  'web_assets/cutouts/20260413_073158.png',
-  'web_assets/cutouts/20260413_073204.png',
-  'web_assets/cutouts/20260413_073246.png',
-  'web_assets/cutouts/20260401_005011.png',
-];
+
 
 // ── MOODS ─────────────────────────────────────────────────────
 const MOODS = [
@@ -126,8 +121,7 @@ showFact();
     if (numEl)   numEl.textContent   = count;
   } catch {
     // Fallback for local dev (no KV available)
-    const fallback = 4721;
-    if (countEl) countEl.textContent = String(fallback).padStart(6, '0');
-    if (numEl)   numEl.textContent   = fallback;
+    if (countEl) countEl.textContent = '000000';
+    if (numEl)   numEl.textContent   = 0;
   }
 })();

@@ -7,7 +7,6 @@
  */
 
 const KV_KEY = 'visit_count';
-const BASE   = 4721; // Starting offset so counter doesn't begin at 0
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
@@ -25,7 +24,7 @@ export async function onRequest(context) {
 
   // KV binding not configured yet (local dev / before KV is attached)
   if (!env.VISIT_COUNTER) {
-    return new Response(JSON.stringify({ count: BASE, note: 'KV not bound' }), {
+    return new Response(JSON.stringify({ count: 0, note: 'KV not bound' }), {
       status: 200, headers: CORS,
     });
   }
@@ -38,7 +37,7 @@ export async function onRequest(context) {
     await env.VISIT_COUNTER.put(KV_KEY, String(count));
   }
 
-  return new Response(JSON.stringify({ count: count + BASE }), {
+  return new Response(JSON.stringify({ count }), {
     status: 200, headers: CORS,
   });
 }
