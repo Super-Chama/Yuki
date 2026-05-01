@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>★ yuki's world ★ 雪</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:wght@400;700&family=Zen+Kurenaido&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- floating stickers -->
+  <div class="sticker" style="top:18%;  left:3%;">✨</div>
+  <div class="sticker" style="top:42%;  right:3.5%; animation-delay:-1.6s;">🎀</div>
+  <div class="sticker" style="top:67%;  left:2%;    animation-delay:-2.8s;">☁️</div>
+  <div class="sticker" style="top:85%;  right:4%;   animation-delay:-0.9s;">🌸</div>
+
+  <!-- top bar -->
+  <div class="top-bar">
+    <span>ARCHIVE: WHITE PERSIAN</span>
+    <span id="topBarStatus">STATUS: 99% FLUFF</span>
+  </div>
+
+  <!-- marquee -->
+  <div class="marquee-bar">
+    <marquee scrollamount="3">✿ welcome to yuki's world ✿ she is very fluffy ✿ do not disturb during nap time ✿ 雪 means snow ✿ all rights reserved by the cat ✿ yuki does not take questions at this time ✿ treats accepted at the door ✿ she knows what she is doing ✿</marquee>
+  </div>
+
+  <!-- layout -->
+  <div class="container">
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="sidebar">
+
+      <div class="profile-card">
+        <div class="tape"></div>
+        <div class="kanji-hero">雪</div>
+        <div class="profile-img-box">
+          <img src="web_assets/images/20260413_073208.webp" alt="Yuki"/>
+        </div>
+        <table class="stats-table">
+          <tr><td class="stats-label">NAME</td>  <td>Yuki / 雪</td></tr>
+          <tr><td class="stats-label">BREED</td> <td>Persian</td></tr>
+          <tr><td class="stats-label">COLOR</td> <td>White</td></tr>
+          <tr><td class="stats-label">JOB</td>   <td>Napping</td></tr>
+          <tr><td class="stats-label">CLASS</td> <td>Chaos Strategist</td></tr>
+          <tr><td class="stats-label">STATUS</td><td id="sidebarStatus">calculating…</td></tr>
+        </table>
+      </div>
+
+      <div class="side-box" style="--bshadow: var(--pink);">
+        <div class="side-box-title">✦ current mood</div>
+        <div class="mood-row">
+          <span class="mood-emoji" id="moodEmoji">😑</span>
+          <span class="mood-text"  id="moodText">judging you</span>
+        </div>
+      </div>
+
+      <div class="side-box" style="--bshadow: var(--gold);">
+        <div class="side-box-title">✦ site updates</div>
+        <ul class="updates-list">
+          <li><span class="upd-date">02.05.26</span> site launched!! 🎉</li>
+          <li><span class="upd-date">02.05.26</span> yuki approved design</li>
+          <li><span class="upd-date">02.05.26</span> yuki sat on keyboard</li>
+          <li><span class="upd-date">02.05.26</span> added photo wall</li>
+        </ul>
+      </div>
+
+      <div class="side-box" style="--bshadow: var(--lavender);">
+        <div class="side-box-title">✦ visitor count</div>
+        <div class="counter-num" id="visitorCount">004721</div>
+        <div class="counter-sub">you are visitor #<span id="visitorNum">4722</span></div>
+      </div>
+
+    </aside>
+
+    <!-- ── MAIN ── -->
+    <div class="main-content">
+
+      <!-- hero -->
+      <section class="hero-banner">
+        <div class="hero-text">
+          <div class="hero-subtitle">White Persian / 雪</div>
+          <h1 class="hero-title">YUKI</h1>
+          <div class="hero-tags">
+            <span>persian</span><span>white</span><span>fluffy</span><span>judgemental</span><span>round</span>
+          </div>
+          <div class="status-tag" id="heroStatus">CALCULATING…</div>
+        </div>
+      </section>
+
+      <!-- profile card clone for mobile (hidden on desktop) -->
+      <div class="profile-card profile-card--mobile">
+        <div class="tape"></div>
+        <div class="kanji-hero">雪</div>
+        <div class="profile-img-box">
+          <img src="web_assets/images/20260413_073208.webp" alt="Yuki"/>
+        </div>
+        <table class="stats-table">
+          <tr><td class="stats-label">NAME</td>  <td>Yuki / 雪</td></tr>
+          <tr><td class="stats-label">BREED</td> <td>Persian</td></tr>
+          <tr><td class="stats-label">COLOR</td> <td>White</td></tr>
+          <tr><td class="stats-label">JOB</td>   <td>Napping</td></tr>
+          <tr><td class="stats-label">CLASS</td> <td>Chaos Strategist</td></tr>
+          <tr><td class="stats-label">STATUS</td><td id="sidebarStatusMobile">calculating…</td></tr>
+        </table>
+      </div>
+
+      <!-- dossier -->
+      <section id="dossier" class="content-block" style="--bshadow: var(--lavender);">
+        <div class="about-inner">
+          <div class="about-text">
+            <p>Hello and welcome. My name is <strong>Yuki</strong> <span class="jp">（雪）</span>, which means <em>snow</em> in Japanese. I am a white Persian cat of distinguished lineage and impeccable taste.</p>
+            <p>I live with my humans, who I graciously allow to feed and photograph me. In return I provide ambient fluffiness, the occasional thunderous purr, and regular reminders of who is in charge.</p>
+            <p>Yuki is a meteorological event. She is pristine, silent, and capable of making everything quite cold if dinner is late.</p>
+            <div class="about-tags">
+              <span class="tag">persian cloud</span>
+              <span class="tag">professionally round</span>
+              <span class="tag">indoor sovereign</span>
+              <span class="tag">chaos strategist</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- widgets row -->
+      <div class="widgets-row">
+
+        <div class="widget-box" style="--bshadow: var(--accent);">
+          <div class="widget-title">♪ now playing</div>
+          <div class="nowplaying">
+            <div class="np-art">🎵</div>
+            <div class="np-info">
+              <div class="np-track">purring.mp3</div>
+              <div class="np-artist">yuki ft. the radiator</div>
+            </div>
+          </div>
+          <div class="np-bar"><div class="np-progress"></div></div>
+        </div>
+
+        <div class="widget-box" style="--bshadow: var(--gold);">
+          <div class="widget-title">✦ yuki rn</div>
+          <img class="widget-photo" src="web_assets/images/20260401_005005.webp" alt="Yuki rn"/>
+        </div>
+
+        <div class="widget-box" style="--bshadow: var(--lavender);">
+          <div class="widget-title">✦ did you know?</div>
+          <p class="fact-text" id="funFact">loading…</p>
+          <button class="mini-btn" id="nextFact">next fact →</button>
+        </div>
+
+      </div>
+
+      <!-- sightings / photo wall -->
+      <section id="sightings" class="content-block" style="--bshadow: var(--gold);">
+        <h3>📷 SIGHTINGS</h3>
+        <p class="block-intro">official portraits, candids, and evidence</p>
+        <div class="photo-wall" id="photoWall"></div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="footer-text">
+      <p class="footer-title">★ yuki's world ★</p>
+      <p class="footer-sub">est. the moment she arrived · 雪 · all content © yuki the cat</p>
+      <p class="footer-tiny">unauthorised petting met with indifference · made with love by her human</p>
+    </div>
+  </footer>
+
+  <div class="kanji-watermark">雪</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

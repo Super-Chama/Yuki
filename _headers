@@ -1,0 +1,23 @@
+# Cloudflare Pages — response headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Cache static assets aggressively (Cloudflare CDN also handles this,
+# but explicit headers help with browser cache)
+/web_assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Never cache HTML
+/*.html
+  Cache-Control: no-cache, must-revalidate
+
+# JS/CSS — versioned by deploy, cache 1 day
+/*.js
+  Cache-Control: public, max-age=86400
+/*.css
+  Cache-Control: public, max-age=86400

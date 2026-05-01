@@ -1,0 +1,20 @@
+# --- Dev environment ---
+.venv/
+__pycache__/
+*.py[cod]
+*.pyc
+
+# --- Original source images (processed assets are in web_assets/) ---
+Images/
+
+# --- Dev/scratch files ---
+2.html
+*.log
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor ---
+.vscode/settings.json
