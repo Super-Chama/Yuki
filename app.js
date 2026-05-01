@@ -48,14 +48,14 @@ const FACTS = [
 
 // ── PHOTOS ────────────────────────────────────────────────────
 const PHOTOS = [
-  { src: 'web_assets/images/20260401_005005.webp', caption: 'in repose',        rot: -2   },
-  { src: 'web_assets/images/20260401_005011.webp', caption: 'surveillance',     rot:  2   },
-  { src: 'web_assets/images/20260413_073158.webp', caption: 'the morning loaf', rot: -1   },
-  { src: 'web_assets/images/20260413_073204.webp', caption: 'peak floof',       rot:  2.5 },
-  { src: 'web_assets/images/20260413_073208.webp', caption: 'judging u',        rot: -3   },
-  { src: 'web_assets/images/20260413_073212.webp', caption: 'sunbeam hours',    rot:  1   },
-  { src: 'web_assets/images/20260413_073246.webp', caption: 'royal portrait',   rot: -1.5 },
-  { src: 'web_assets/images/20260413_073300.webp', caption: 'vibing intensely', rot:  2.2 },
+  { src: 'web_assets/images/20260401_005005.webp?v=1', caption: 'in repose',        rot: -2   },
+  { src: 'web_assets/images/20260401_005011.webp?v=1', caption: 'surveillance',     rot:  2   },
+  { src: 'web_assets/images/20260413_073158.webp?v=1', caption: 'the morning loaf', rot: -1   },
+  { src: 'web_assets/images/20260413_073204.webp?v=1', caption: 'peak floof',       rot:  2.5 },
+  { src: 'web_assets/images/20260413_073208.webp?v=1', caption: 'judging u',        rot: -3   },
+  { src: 'web_assets/images/20260413_073212.webp?v=1', caption: 'sunbeam hours',    rot:  1   },
+  { src: 'web_assets/images/20260413_073246.webp?v=1', caption: 'royal portrait',   rot: -1.5 },
+  { src: 'web_assets/images/20260413_073300.webp?v=1', caption: 'vibing intensely', rot:  2.2 },
 ];
 
 // ══════════════════════════════════════════════════════════════
