@@ -5,7 +5,7 @@ __pycache__/
 *.pyc
 
 # --- Original source images (processed assets are in web_assets/) ---
-Images/
+/Images/
 
 # --- Dev/scratch files ---
 2.html
